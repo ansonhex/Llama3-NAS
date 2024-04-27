@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    restart: always
+    network_mode: host
+    volumes:
+      - /home/ansonhe/AI/ollama:/root/.ollama # change this to your own path
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    restart: always
+    network_mode: host
+    volumes:
+      - /home/ansonhe/AI/Llama3/open-webui:/app/backend/data # change this to your own path
