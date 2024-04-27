@@ -27,9 +27,13 @@ Copy the provided `docker-compose.yml` file to your directory, then start the se
 $ sudo docker-compose up -d
 ```
 
-### 3. Open web browser and enter `YOUR_NAS_IP:8080`
+### 3. Access the Web Interface
 
-### 4. In the web interface, change the Ollama Models address to `0.0.0.0:11434`.
+Open web browser and enter `YOUR_NAS_IP:8080`
+
+### 4. Configure Ollama Models
+
+In the web interface, change the Ollama Models address to `0.0.0.0:11434`.
 
 ![config](https://raw.githubusercontent.com/ansonhe97/rawimages/master/img/config.png)
 
